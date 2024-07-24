@@ -9,3 +9,22 @@
   padding: 4rem;
   text-align: center;
 }
+
+.logout_btn {
+  width: 45%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s ease-in-out;
+  background-color: #580604;
+  max-width: 250px;
+}
+
+.logout_btn:hover {
+  background-color: #ee0d05;
+}
