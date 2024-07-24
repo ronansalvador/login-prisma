@@ -2,8 +2,6 @@
 import styles from './page.module.css'
 import { useUser } from './context/userContext'
 import { redirect } from 'next/navigation'
-import Link from 'next/link'
-import { useEffect } from 'react'
 
 export default function Home() {
   const { user, changeUser } = useUser()
