@@ -17,7 +17,6 @@ body {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: black;
 }
 
 img,
@@ -81,11 +80,11 @@ input::placeholder {
 .section_page {
   color: white;
   text-align: center;
-  /* height: 100vh; */
-  /* padding-block: 4rem; */
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  min-height: 100vh;
+  background-color: black;
 }
 
 .form_login {

@@ -44,30 +44,6 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
     }
   }, [])
 
-  // function useInactivity(timeout = 2400000, onInactive) {
-  //   useEffect(() => {
-  //     let timer
-
-  //     const resetTimer = () => {
-  //       clearTimeout(timer)
-  //       timer = setTimeout(onInactive, timeout)
-  //     }
-
-  //     window.addEventListener('mousemove', resetTimer)
-  //     window.addEventListener('keydown', resetTimer)
-  //     window.addEventListener('scroll', resetTimer)
-
-  //     resetTimer() // Iniciar o timer na montagem
-
-  //     return () => {
-  //       clearTimeout(timer) // Limpar timer no desmonte
-  //       window.removeEventListener('mousemove', resetTimer)
-  //       window.removeEventListener('keydown', resetTimer)
-  //       window.removeEventListener('scroll', resetTimer)
-  //     }
-  //   }, [timeout, onInactive])
-  // }
-
   return (
     <UserContext.Provider value={{ user, changeUser }}>
       {children}
